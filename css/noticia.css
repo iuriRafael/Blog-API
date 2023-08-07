@@ -51,11 +51,8 @@ header h1{
 	margin:1.5 0px;
 }
 
-h2{
-	color:#000000;
-margin:1.5 0px;	
-}
-    #blog-container {
+
+#blog-container {
 	text-align: center;
 	padding: 5em 0;
 }
@@ -65,7 +62,7 @@ margin:1.5 0px;
   }
 
 #imageCarousel img {
-    max-height: 400px; /* Defina aqui a altura máxima desejada */
+    max-height: 600px; /* Defina aqui a altura máxima desejada */
     width: auto;
     margin: 0 auto; /* Para centralizar horizontalmente as imagens */
 }
