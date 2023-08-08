@@ -1,17 +1,55 @@
-fetch ("https://api-rest-post-diegocandido.herokuapp.com/postagens/").then(response => response.json())
+fetch ("https://api-rest-post-diegocandido.herokuapp.com/postagens/")
+.then(response => response.json())
 .then(postagens =>{
     console.log(postagens);
 
+
+    //imagem
+    let Img1 = `https://api-rest-post-diegocandido.herokuapp.com${postagens[0].thumbImage}`;
+    document.querySelector(".imagem").src = Img1;
+
+    let Img2 = `https://api-rest-post-diegocandido.herokuapp.com${postagens[1].thumbImage}`;
+    document.querySelector(".imagem2").src = Img2;
+
+    let Img3 = `https://api-rest-post-diegocandido.herokuapp.com${postagens[2].thumbImage}`;
+    document.querySelector(".imagem3").src = Img3;
+
+    let Img4 = `https://api-rest-post-diegocandido.herokuapp.com${postagens[3].thumbImage}`;
+    document.querySelector(".imagem4").src = Img4;
+
+    let Img5 = `https://api-rest-post-diegocandido.herokuapp.com${postagens[4].thumbImage}`;
+    document.querySelector(".imagem5").src = Img5;
+
+    let Img6 = `https://api-rest-post-diegocandido.herokuapp.com${postagens[5].thumbImage}`;
+    document.querySelector(".imagem6").src = Img6;
+
+
+    //titulo
+
     document.querySelector(".titulo").innerHTML = postagens[0].title;
-    document.querySelector(".date").innerHTML = postagens[0].postDate;
+    document.querySelector(".titulo1").innerHTML = postagens[1].title;
+    document.querySelector(".titulo2").innerHTML = postagens[4].title;
     
 
 
-    document.querySelector(".texto").innerHTML = postagens[0].description;
-    document.querySelector(".texto1").innerHTML = postagens[1].description;
-    document.querySelector(".texto2").innerHTML = postagens[2].description;
-    document.querySelector(".texto3").innerHTML = postagens[3].description;
-    document.querySelector(".texto4").innerHTML = postagens[4].description;
+    //data da postagem
+
+    document.querySelector(".date").innerHTML = postagens[0].postDate;
+    document.querySelector(".date1").innerHTML = postagens[1].postDate;
+    document.querySelector(".date2").innerHTML = postagens[2].postDate;
+    document.querySelector(".date3").innerHTML = postagens[3].postDate;
+    document.querySelector(".date4").innerHTML = postagens[4].postDate;
+    document.querySelector(".date5").innerHTML = postagens[5].postDate;
+ 
+
+    //descrição das postagem
+    document.querySelector(".texto1").innerHTML = postagens[0].description;
+    document.querySelector(".texto2").innerHTML = postagens[1].description;
+    document.querySelector(".texto3").innerHTML = postagens[2].description;
+    document.querySelector(".texto4").innerHTML = postagens[3].description;
+    document.querySelector(".texto5").innerHTML = postagens[4].description;
+    document.querySelector(".texto6").innerHTML = postagens[5].description;
+
 
 })
 
