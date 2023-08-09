@@ -54,6 +54,11 @@ margin-top: 40px;
  	margin-top:20px;
 }
 
+.detalhes-card {
+	display: none;
+	/* Adicione outros estilos conforme necessário */
+  }
+  
 .card img{
 	width: 100%;
 }

@@ -5,23 +5,12 @@ fetch ("https://api-rest-post-diegocandido.herokuapp.com/postagens/")
 
 
     //imagem
-    let Img1 = `https://api-rest-post-diegocandido.herokuapp.com${postagens[0].thumbImage}`;
-    document.querySelector(".imagem").src = Img1;
-
-    let Img2 = `https://api-rest-post-diegocandido.herokuapp.com${postagens[1].thumbImage}`;
-    document.querySelector(".imagem2").src = Img2;
-
-    let Img3 = `https://api-rest-post-diegocandido.herokuapp.com${postagens[2].thumbImage}`;
-    document.querySelector(".imagem3").src = Img3;
-
-    let Img4 = `https://api-rest-post-diegocandido.herokuapp.com${postagens[3].thumbImage}`;
-    document.querySelector(".imagem4").src = Img4;
-
-    let Img5 = `https://api-rest-post-diegocandido.herokuapp.com${postagens[4].thumbImage}`;
-    document.querySelector(".imagem5").src = Img5;
-
-    let Img6 = `https://api-rest-post-diegocandido.herokuapp.com${postagens[5].thumbImage}`;
-    document.querySelector(".imagem6").src = Img6;
+    document.querySelector(".imagem").src =`https://api-rest-post-diegocandido.herokuapp.com${postagens[0].thumbImage}`;
+    document.querySelector(".imagem2").src = `https://api-rest-post-diegocandido.herokuapp.com${postagens[1].thumbImage}`;
+    document.querySelector(".imagem3").src = `https://api-rest-post-diegocandido.herokuapp.com${postagens[2].thumbImage}`;
+    document.querySelector(".imagem4").src = `https://api-rest-post-diegocandido.herokuapp.com${postagens[3].thumbImage}`;
+    document.querySelector(".imagem5").src = `https://api-rest-post-diegocandido.herokuapp.com${postagens[4].thumbImage}`;
+    document.querySelector(".imagem6").src = `https://api-rest-post-diegocandido.herokuapp.com${postagens[5].thumbImage}`;
 
 
     //titulo
@@ -30,8 +19,6 @@ fetch ("https://api-rest-post-diegocandido.herokuapp.com/postagens/")
     document.querySelector(".titulo1").innerHTML = postagens[1].title;
     document.querySelector(".titulo2").innerHTML = postagens[4].title;
     
-
-
     //data da postagem
 
     document.querySelector(".date").innerHTML = postagens[0].postDate;
@@ -41,7 +28,6 @@ fetch ("https://api-rest-post-diegocandido.herokuapp.com/postagens/")
     document.querySelector(".date4").innerHTML = postagens[4].postDate;
     document.querySelector(".date5").innerHTML = postagens[5].postDate;
  
-
     //descrição das postagem
     document.querySelector(".texto1").innerHTML = postagens[0].description;
     document.querySelector(".texto2").innerHTML = postagens[1].description;
@@ -51,7 +37,9 @@ fetch ("https://api-rest-post-diegocandido.herokuapp.com/postagens/")
     document.querySelector(".texto6").innerHTML = postagens[5].description;
 
 
-})
+});
+
+
 
 
 
