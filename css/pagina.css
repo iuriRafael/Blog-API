@@ -1,6 +1,22 @@
-.titulo,
-.titulo1,
-.titulo2 {
+/* Estilos para a visualização da publicação */
+.card-clicked.centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
   text-align: center;
 }
+
+
+
+
+@media screen and (max-width: 600px){
+  /* Estilos para imagens na visualização da publicação */
+.card-clicked.centered .imagem {
+  max-width: 100%;
+  max-height: 300px; /* Altura máxima desejada para as imagens */
+}
+}
+
 
